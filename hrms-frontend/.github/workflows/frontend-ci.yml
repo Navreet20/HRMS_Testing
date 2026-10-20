@@ -1,0 +1,35 @@
+name: Frontend CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  frontend:
+    name: Frontend (typecheck, lint, z-index, jest)
+    runs-on: ubuntu-latest
+    env:
+      API_PROXY_TARGET: http://127.0.0.1:5001
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Z-index guard
+        run: npm run check:z-index
+
+      - name: Run tests
+        run: npm run test

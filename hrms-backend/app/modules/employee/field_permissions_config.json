@@ -1,0 +1,718 @@
+{
+  "roleAliases": {
+    "SUPERADMIN": "ADMIN",
+    "ADMIN": "ADMIN",
+    "HR": "HR",
+    "ONBOARDING": "HR",
+    "EMPLOYEE": "SELF",
+    "ACCOUNTANT": "HR",
+    "IMMIGRATION": "HR",
+    "MANAGER": "HR",
+    "MARKETING": "HR"
+  },
+  "fields": {
+    "firstName": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none",
+      "correctionRequest": true
+    },
+    "lastName": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none",
+      "correctionRequest": true
+    },
+    "middleName": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none",
+      "correctionRequest": true
+    },
+    "dateOfBirth": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none",
+      "correctionRequest": true
+    },
+    "personalEmail": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "phone": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "phoneNumber": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "gender": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "ethnicity": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "maritalStatus": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "nationality": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "addressLine1": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "addressLine2": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "city": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "state": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "postalCode": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "country": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "officialEmail": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emailId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "workEmail": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "department": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "departmentId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "designationId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "locationId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "employmentType": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "reportingManagerId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "dateOfJoining": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "payrollStartDate": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "nationalIdDocumentTypeId": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "nationalIdDocumentType": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "nationalIdNumber": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "last4",
+      "fullViewRoles": ["HR", "ADMIN"]
+    },
+    "nationalIdCountry": {
+      "whoWrites": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyName": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyPhone": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyRelation": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyEmail": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyContactName": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyContactPhone": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyContactRelation": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyContactEmail": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    },
+    "emergencyEmployeeId": {
+      "whoWrites": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoEditsLater": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "whoViews": [
+        "SELF",
+        "HR",
+        "ADMIN"
+      ],
+      "masking": "none"
+    }
+  }
+}

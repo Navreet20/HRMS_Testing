@@ -1,0 +1,77 @@
+/* Tailwind utilities only (no Preflight). Tokens, document defaults, and control variants: src/styles/tailwindPlugin.mts. */
+@layer theme, base, vendor, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+/* Layered so utilities override the libraries without `!`. */
+@import "react-phone-input-2/lib/style.css" layer(vendor);
+@import "react-day-picker/style.css" layer(vendor);
+@plugin "./styles/tailwindPlugin.mts";
+
+@theme {
+  --color-ds-ink: var(--ds-ink);
+  --color-ds-ink-muted: var(--ds-ink-muted);
+  --color-ds-accent: var(--ds-accent);
+  --color-ds-accent-hover: var(--ds-accent-hover);
+  --color-ds-accent-active: var(--ds-accent-active);
+  --color-ds-accent-disabled: var(--ds-accent-disabled);
+  --color-ds-accent-focus: var(--ds-accent-focus);
+  --color-ds-on-accent: var(--ds-on-accent);
+  --color-ds-link: var(--ds-link);
+  --color-ds-link-hover: var(--ds-link-hover);
+  --color-ds-paper: var(--ds-paper);
+  --color-ds-border: var(--ds-border);
+  --color-ds-danger: var(--ds-danger);
+  --color-ds-surface: var(--ds-surface-gradient);
+  --color-ds-nested: var(--ds-nested-gradient);
+
+  --color-emp-text: var(--employees-text, var(--ds-ink));
+  --color-emp-muted: var(--employees-text-muted, var(--ds-ink-muted));
+  --color-emp-surface: var(--employees-surface, var(--ds-paper));
+  --color-emp-raised: var(--employees-surface-raised, var(--ds-nested-gradient));
+  --color-emp-line: var(--employees-line, var(--ds-border));
+  --color-emp-border: var(--employees-border, var(--ds-border));
+  --color-emp-accent: var(--employees-accent, var(--ds-accent));
+  --color-emp-accent-soft: var(--employees-accent-soft, var(--ds-accent-soft));
+  --color-emp-success: var(--employees-success, #15803d);
+  --color-emp-success-soft: var(--employees-success-soft, rgba(21, 128, 61, 0.1));
+  --color-emp-warning: var(--employees-warning, #b45309);
+  --color-emp-warning-soft: var(--employees-warning-soft, rgba(180, 83, 9, 0.1));
+  --color-emp-holiday: var(--employees-holiday, #6d28d9);
+  --color-emp-holiday-soft: var(--employees-holiday-soft, rgba(109, 40, 217, 0.1));
+  --color-emp-critical: var(--employees-critical, #b91c1c);
+  --color-emp-focus: var(--employees-focus, var(--ds-accent));
+  --color-emp-on-accent: var(--employees-on-accent, var(--ds-on-accent));
+  --radius-emp: 0.5rem;
+}
+
+/* `inline` so utilities read module tokens on the element, not at :root. */
+@theme inline {
+  --color-app-canvas: var(--app-canvas);
+  --color-app-surface: var(--app-surface);
+  --color-app-raised: var(--app-surface-raised);
+  --color-app-text: var(--app-text);
+  --color-app-muted: var(--app-text-muted);
+  --color-app-border: var(--app-border);
+  --color-app-accent: var(--app-accent);
+  --color-app-accent-soft: var(--app-accent-soft);
+  --color-module-success: var(--module-success);
+  --color-module-warning: var(--module-warning);
+  --color-module-critical: var(--module-critical);
+  --color-module-info: var(--module-info);
+
+  --color-dashboard-text: var(--dashboard-text);
+  --color-dashboard-muted: var(--dashboard-text-muted);
+  --color-dashboard-surface: var(--dashboard-surface);
+  --color-dashboard-raised: var(--dashboard-surface-raised);
+  --color-dashboard-border: var(--dashboard-border);
+  --color-dashboard-line: var(--dashboard-line);
+  --color-dashboard-accent: var(--dashboard-accent);
+  --color-dashboard-accent-soft: var(--dashboard-accent-soft);
+  --color-dashboard-success: var(--dashboard-success);
+  --color-dashboard-success-soft: var(--dashboard-success-soft);
+  --color-dashboard-warning: var(--dashboard-warning);
+  --color-dashboard-warning-soft: var(--dashboard-warning-soft);
+  --color-dashboard-chart-leave: var(--dashboard-chart-leave);
+  --color-dashboard-chart-leave-soft: var(--dashboard-chart-leave-soft);
+}
+

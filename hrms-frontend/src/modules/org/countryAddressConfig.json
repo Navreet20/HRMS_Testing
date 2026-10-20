@@ -1,0 +1,70 @@
+{
+  "default": {
+    "country_code": null,
+    "region_label": "State or region",
+    "region_required": false,
+    "postal_code_regex": "",
+    "city_required": true,
+    "city_label": "City"
+  },
+  "countries": [
+    {
+      "country_code": "US",
+      "region_label": "State",
+      "region_required": true,
+      "postal_code_regex": "^\\d{5}(?:-\\d{4})?$"
+    },
+    {
+      "country_code": "IN",
+      "region_label": "State",
+      "region_required": true,
+      "postal_code_regex": "^\\d{6}$"
+    },
+    {
+      "country_code": "GB",
+      "region_label": "County/Region",
+      "region_required": true,
+      "postal_code_regex": "^[A-Z]{1,2}\\d[A-Z\\d]?\\s*\\d[A-Z]{2}$"
+    },
+    {
+      "country_code": "CA",
+      "region_label": "Province",
+      "region_required": true,
+      "postal_code_regex": "^[ABCEGHJ-NPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z]\\s?\\d[ABCEGHJ-NPRSTV-Z]\\d$"
+    },
+    {
+      "country_code": "JP",
+      "region_label": "Prefecture",
+      "region_required": true,
+      "postal_code_regex": "^\\d{3}-?\\d{4}$"
+    },
+    {
+      "country_code": "SG",
+      "region_label": "State or region",
+      "region_required": false,
+      "postal_code_regex": "",
+      "city_required": false
+    },
+    {
+      "country_code": "MC",
+      "region_label": "State or region",
+      "region_required": false,
+      "postal_code_regex": "",
+      "city_required": false
+    },
+    {
+      "country_code": "VA",
+      "region_label": "State or region",
+      "region_required": false,
+      "postal_code_regex": "",
+      "city_required": false
+    },
+    {
+      "country_code": "SM",
+      "region_label": "State or region",
+      "region_required": false,
+      "postal_code_regex": "",
+      "city_required": false
+    }
+  ]
+}

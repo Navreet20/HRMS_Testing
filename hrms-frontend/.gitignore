@@ -1,0 +1,40 @@
+# Dependencies / build
+node_modules/
+dist/
+.next/
+out/
+*.local
+*.tsbuildinfo
+.turbo/
+.cache/
+
+# Env / secrets (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# Local verify / debug dumps
+.verify-*/
+tmp-*-debug.png
+
+# Tooling / OS / editors
+graphify-out/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Design docs (not runtime)
+BRANDING.md
+
+# Next.js agent stubs (recreated by bare `next dev` inside Cursor)
+AGENTS.md
+CLAUDE.md
+
