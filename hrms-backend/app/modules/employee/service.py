@@ -973,7 +973,8 @@ class EmployeeService:
         if join_department:
             stmt = stmt.outerjoin(Department, Employee.department_id == Department.department_id)
 
-        last_activity = func.coalesce(Employee.updated_date, Employee.created_date)
+        # Employee no longer has created_date/updated_date; only use them when present
+        # (legacy DBs) and only for lastupdated sort.
         order_cols: list[Any]
         if sort == "email":
             order_cols = [Employee.email_id]
@@ -982,7 +983,17 @@ class EmployeeService:
         elif sort == "department":
             order_cols = [Department.department_name, Employee.last_name, Employee.first_name]
         elif sort == "lastupdated":
-            order_cols = [last_activity, Employee.last_name, Employee.first_name]
+            updated = getattr(Employee, "updated_date", None)
+            created = getattr(Employee, "created_date", None)
+            if updated is not None and created is not None:
+                last_activity = func.coalesce(updated, created)
+            else:
+                last_activity = updated or created
+            order_cols = (
+                [last_activity, Employee.last_name, Employee.first_name]
+                if last_activity is not None
+                else [Employee.last_name, Employee.first_name]
+            )
         else:
             order_cols = [Employee.last_name, Employee.first_name]
         if q is not None:

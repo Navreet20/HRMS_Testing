@@ -415,7 +415,8 @@ async def _location_values(db: AsyncSession, category: str, row: dict[str, Any])
             raise HTTPException(status_code=400, detail="Office location not found.")
         return {
             "office_location_id": office_id,
-            "location_name": row.get("locationName") or office.name,
+            # Name/address come from `locations` via the FK; do not copy them here.
+            "location_name": None,
             "address_line_1": None, "address_line_2": None, "city": None,
             "state_province": None, "zip": None, "country": None,
         }
